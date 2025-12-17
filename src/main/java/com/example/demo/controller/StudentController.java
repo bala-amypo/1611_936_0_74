@@ -2,12 +2,12 @@ package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.StudentEntity;
-imp
+import com.example.demo.service.StudentService;
 @RestController
 public class StudentController{
     @Autowired StudentService ser;
-    @PostMapping("/post");
+    @PostMapping("/post")
     public StudentEntity sendData(@RequestBody StudentEntity  stu){
-
+        return ser.postData(stu);
     }
 }
