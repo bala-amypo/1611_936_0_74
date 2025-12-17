@@ -1,3 +1,7 @@
 package com.example.demo.service;
 
-publiv
+import com.example.demo.entity.StudentEntity;
+public Integer StudentService{
+    StudentEntity postData(StudentEntity stu);
+    
+}
