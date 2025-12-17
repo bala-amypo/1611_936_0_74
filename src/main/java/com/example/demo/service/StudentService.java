@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import com.example.demo.entity.StudentEntity;
 public Integer StudentService{
-    StudentEntity postData(StudentEntity stu);
-    
+    public StudentEntity postData(StudentEntity stu){
+        return student.save(stu);
+    }
+
 }
