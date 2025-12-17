@@ -1,6 +1,6 @@
-package com.example.demo.entity;
-
-import jakarta.persistence.entity;
+package com.example.demo.Entity;
+import java.util.Date
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
