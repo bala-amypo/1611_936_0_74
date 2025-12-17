@@ -25,18 +25,19 @@ public class StudentEntity{
     public void setId(Integer id){
         this.id=id;
     }
-    public void setUsername(){
+    public void setUsername(String username){
         this.username=username;
     }
-    public void setEmail(){
+    public void setEmail(String email){
         this.email=email;
     }
-    public void setPassword(){
-        this.password=
+    public void setPassword(String password){
+        this.password=password;
     }
-    public void set(){
-        
+    public void setCreated(Date created){
+        this.created=created;
     }
+    StudentEntity(Integer id,)
 
 
 }
