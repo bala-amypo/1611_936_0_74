@@ -1,5 +1,6 @@
-package com.example.demo.Entity;
-import java.util.Date
+package com.example.demo.entity;
+
+import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class StudentEntity{
     @Id
-    @GeneratedValue(stategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String username;
     private String email;
