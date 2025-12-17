@@ -37,7 +37,16 @@ public class StudentEntity{
     public void setCreated(Date created){
         this.created=created;
     }
-    StudentEntity(Integer id,)
+    public StudentEntity(Integer id,String username,String email,String password,Date created){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.created=created;
+    }
+    public StudentEntity(){
+
+    }
 
 
 }
