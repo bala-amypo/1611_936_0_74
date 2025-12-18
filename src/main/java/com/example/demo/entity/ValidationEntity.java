@@ -1,4 +1,4 @@
-package com.example.demo.Entity
+package com.example.demo.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 
 @Entity
 public class ValidationEntity{
@@ -20,8 +21,10 @@ public class ValidationEntity{
     @Email(message = "Email is not valid")
     private String email;
     @Max(6)
-    @NotNull
+    @NotNull(message = "Password is mandatory")
     private String password;
+    @Max(30)
+    @Positive
     private int age;
 
     
