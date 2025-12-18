@@ -1,4 +1,4 @@
-package com.example.demo.Entity;
+package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -58,11 +58,15 @@ public class ValidationEntity{
     }
     public ValidationEntity(Long id,
     @NotNull @Size(min=2,max=10,message="must be 2 to 10 character") String username,
-    @Email(message = "Email is not valid") String email;
-    @Size(min=2,max=10) @NotNull(message = "Password is mandatory")String password;
-    @Max(30)
-    @Positive(message="Age must be a positive number")
-    private int age;
+    @Email(message = "Email is not valid") String email,
+    @Size(min=2,max=10,message="must be 2 to 10 character") @NotNull(message = "Password is mandatory")String password,
+    @Max(30) @Positive(message="Age must be a positive number") int age){
+        this.id=id;
+        this.username = username;
+        this.password=password;
+        this.email=email;
+        this.age=age;
+    }
     )
 
     
