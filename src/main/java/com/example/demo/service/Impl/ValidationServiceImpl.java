@@ -19,4 +19,8 @@ public class ValidationServiceImpl implements ValidationService{
         //StudentEntity getData();
         return student.save(stu);
     }
+    @Override
+    public ValidationEntity vgetData(long id){
+        return student.findById(id);
+    }
 }
