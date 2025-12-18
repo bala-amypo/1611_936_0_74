@@ -26,5 +26,7 @@ public class StudentController{
     public String deleteVal(@PathVariable int id){
         return ser.DeleteData(id);
     }
-    public StudentEntit
+    public StudentEntity findId(){
+        
+    }
 }
