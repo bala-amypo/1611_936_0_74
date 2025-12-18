@@ -8,15 +8,10 @@ import java.util.List;
 import com.example.demo.repository.StudentRepo;
 @Service
 
-public class StudentServiceImpl implements StudentService{
-    @Autowired StudentRepo student;
-    //save()
-    //findAll()
-    //findById()
-    //deleteById();
-    //existById();
+public class ValidationServiceImpl implements ValidationService{
+    @Autowired ValidationRepo student;
     @Override
-    public StudentEntity postData(StudentEntity stu){
+    public ValidationEntity postData(ValidationEntity stu){
         //StudentEntity getData();
         return student.save(stu);
     }
