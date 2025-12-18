@@ -14,9 +14,9 @@ import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.StudentService;
 @RestController
 public class ValidationController{
-    @Autowired StudentService ser;
+    @Autowired ValidationService ser;
     @PostMapping("/post")
     
-    public StudentEntity sendData(@RequestBody ValidationEntity){
-        return ser.postData(stu);
+    public ValidationService sendData(@Valid @RequestBody ValidationEntity entity){
+        return ser.postData(entity);
     }
