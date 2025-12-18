@@ -1,22 +1,14 @@
-ackage com.example.demo.service.Impl;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.stereotype.Service;
-import com.example.demo.entity.ValidationEntity;
-import com.example.demo.service.StudentService;
+package com.example.demo.service;
 import java.util.List;
-import com.example.demo.repository.StudentRepo;
-@Service
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.ValidationEntity;
 
-public class StudentServiceImpl implements StudentService{
-    @Autowired StudentRepo student;
-    //save()
-    //findAll()
-    //findById()
-    //deleteById();
-    //existById();
-    @Override
-    public StudentEntity postData(StudentEntity stu){
-        //StudentEntity getData();
-        return student.save(stu);
-    }
+public interface ValidationService{
+    ValidationEntity postData(ValidationEntity stu);
+        //StudentEntity getData(); 
+    // List<StudentEntity>getAllData();
+    // String DeleteData(int id);
+    // StudentEntity getData(int id);
+    // StudentEntity updateData(int id,StudentEntity entity);
+
+}
