@@ -3,7 +3,7 @@ import java.util.List;
 import com.example.demo.entity.StudentEntity;
 public interface StudentService{
     StudentEntity postData(StudentEntity stu);
-        //StudentEntity getData();
+        //StudentEntity getData(); 
     List<StudentEntity>getAllData();
     String DeleteData(int id);
     StudentEntity getData(int id);
