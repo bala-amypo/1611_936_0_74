@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService{
         return student.findAll();
     }
     public String DeleteData(@PathVariable int id){
-        student.deleteById();
+        student.deleteById(id);
         return "Deleted Successfully";
     }
 }
