@@ -6,6 +6,6 @@ public interface StudentService{
         //StudentEntity getData();
     List<StudentEntity>getAllData();
     String DeleteData(int id);
-    
+    StudentEntity getData(int id);
 
 }
