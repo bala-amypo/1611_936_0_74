@@ -24,12 +24,13 @@ public class StudentServiceImpl implements StudentService{
     public List<StudentEntity>getAllData(){
         return student.findAll();
     }
-    public String DeleteData(@PathVariable int id){
+    @Override
+    public String DeleteData(int id){
         student.deleteById(id);
         return "Deleted Successfully";
     }
     @Override
     public StudentEntity getData(int id){
-        return student.findById(id);
+        return student.findById(id).orElse(null);
     }
 }
