@@ -13,11 +13,6 @@ public class ValidationController{
     @Autowired ValidationService ser;
     @PostMapping("/post")
     
-    public ValidationService sendData(@Valid @RequestBody ValidationEntity entity){
+    public ValidationEntity sendData(@Valid @RequestBody ValidationEntity entity){
         return ser.postData(entity);
-    }
-
-    @GetMapping("/get")
-    public List<ValidationEntity> getData(){
-        return ser.getAllData();
     }
