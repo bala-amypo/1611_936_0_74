@@ -1,4 +1,6 @@
 package com.example.demo.controller;
+
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,8 +12,13 @@ import com.example.demo.service.StudentService;
 public class StudentController{
     @Autowired StudentService ser;
     @PostMapping("/post")
-    @GetMapping("/get")
+    
     public StudentEntity sendData(@RequestBody StudentEntity  stu){
         return ser.postData(stu);
     }
+    @GetMapping("/get")
+    public List<StudentEntity> getData(){
+        return ser.getAllData();
+    }
+
 }
