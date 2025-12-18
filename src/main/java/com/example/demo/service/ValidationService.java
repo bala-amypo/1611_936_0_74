@@ -4,7 +4,7 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.entity.ValidationEntity;
 
 public interface ValidationService{
-    ValidationEntity postData(ValidationEntity stu);
+    ValidationEntity vpostData(ValidationEntity stu);
         //StudentEntity getData(); 
     // List<StudentEntity>getAllData();
     // String DeleteData(int id);
