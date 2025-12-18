@@ -23,4 +23,7 @@ public class StudentServiceImpl implements StudentService{
     public List<StudentEntity>getAllData(){
         return student.findAll();
     }
+    public String DeleteData(int id){
+        return student
+    }
 }
