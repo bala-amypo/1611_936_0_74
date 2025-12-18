@@ -30,4 +30,5 @@ public class StudentController{
     public StudentEntity getDataId(@PathVariable int id){
         return ser.getData(id);
     }
+    @RestController
 }
