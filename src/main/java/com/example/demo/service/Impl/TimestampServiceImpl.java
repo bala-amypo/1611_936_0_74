@@ -8,15 +8,15 @@ import java.util.List;
 import com.example.demo.repository.StudentRepo;
 @Service
 
-public class StudentServiceImpl implements StudentService{
-    @Autowired StudentRepo student;
+public class TimestampServiceImpl implements TimestampService{
+    @Autowired TimestampRepo student;
     //save()
     //findAll()
     //findById()
     //deleteById();
     //existById();
     @Override
-    public StudentEntity postData(StudentEntity stu){
+    public Timestamp postData(Timestamp stu){
         //StudentEntity getData();
         return student.save(stu);
     }
