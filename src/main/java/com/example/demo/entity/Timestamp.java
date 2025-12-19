@@ -2,7 +2,11 @@ package com.example.demo.entity;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import java.time.LocalDateTime
+import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 @Data
@@ -10,6 +14,9 @@ import java.time.LocalDateTime
 @NoArgsConstructor
 
 public class Timestamp{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
     private Long id;
     private String name;
     private String email;
