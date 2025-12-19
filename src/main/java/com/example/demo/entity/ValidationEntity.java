@@ -9,8 +9,10 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
-
+import l
 @Entity
+@Data
+
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -26,7 +28,7 @@ public class ValidationEntity{
     @Max(30)
     @Positive(message="Age must be a positive number")
     private int age;
-    
+
 //     public Long getId(){
 //         return id;
 //     }
