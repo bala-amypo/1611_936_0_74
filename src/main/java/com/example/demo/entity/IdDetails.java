@@ -19,7 +19,7 @@ import com.example.demo.entity.StudentDetails;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Timestamp{
+public class IdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;

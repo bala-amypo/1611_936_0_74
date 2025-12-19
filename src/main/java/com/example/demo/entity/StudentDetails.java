@@ -15,7 +15,7 @@ import jakarta.persistence.PreUpdate;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Timestamp{
+public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
