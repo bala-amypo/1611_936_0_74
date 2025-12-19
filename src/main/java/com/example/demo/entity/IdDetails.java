@@ -11,6 +11,8 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.PreUpdate;
+import com.example.demo.entity.StudentDetails;
+
 
 @Entity
 @Data
@@ -27,4 +29,4 @@ public class Timestamp{
     @JoinColumn(name = "student_id")
     private StudentDetails student;
 
-    }
+}
