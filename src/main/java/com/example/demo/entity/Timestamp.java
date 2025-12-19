@@ -21,6 +21,8 @@ public class Timestamp{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
+    @PrePersist
+    
 
 
 }
