@@ -1,6 +1,6 @@
 package com.example.demo.service;
 import java.util.List;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.Timestamp;
 public interface StudentService{
     StudentEntity postData(StudentEntity stu);
         //StudentEntity getData(); 
