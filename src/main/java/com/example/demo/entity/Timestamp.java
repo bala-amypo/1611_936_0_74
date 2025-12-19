@@ -27,7 +27,7 @@ public class Timestamp{
     
     public void Oncreate(){
     LocalDateTime now = LocalDateTime.now();
-    if(this.createdAt == nul){
+    if(this.createdAt == null){
         this.createdAt = now;
     }
     this.updateAt = now;
