@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.PreUpdate;
 
 @Entity
@@ -22,6 +23,7 @@ public class Timestamp{
     private int idname;
 
     @OneToOne
+    @JoinColumn(name = "student_id")
     private StudentDetails student;
-    
+
     }
