@@ -19,7 +19,9 @@ public class Timestamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private String email;
-    private String address;
-    @PrePersist
+    private int idname;
+
+    @OneToOne
+    private StudentDetails student;
+    
+    }
