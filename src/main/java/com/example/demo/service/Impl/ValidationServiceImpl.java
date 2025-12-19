@@ -6,6 +6,7 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
+import com.example.demo.exception.ValidationException;
 
 import java.util.List;
 import com.example.demo.repository.StudentRepo;
@@ -21,6 +22,6 @@ public class ValidationServiceImpl implements ValidationService{
     }
     @Override
     public ValidationEntity vgetData(long id){
-        return student.findById(id).orElseThrow(()->new );
+        return student.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
     }
 }
