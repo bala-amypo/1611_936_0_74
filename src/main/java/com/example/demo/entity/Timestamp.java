@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 
 @Entity
 @Data
@@ -22,7 +23,9 @@ public class Timestamp{
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
     @PrePersist
-    
+    public void Oncreate(){
+    LocalDateTime 
+
 
 
 }
