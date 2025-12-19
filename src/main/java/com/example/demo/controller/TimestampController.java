@@ -13,10 +13,10 @@ import jakarta.validation.Valid;
 @RestController
 public class TimestampController{
     @Autowired TimestampService ser;
-    @PostMapping("/vpost")
+    @PostMapping("/tpost")
     
-    public Timestamp vsendData(@Valid @RequestBody Timestamp entity){
-        return ser.vpostData(entity);
+    public Timestamp tsendData(@Valid @RequestBody Timestamp entity){
+        return ser.tpostData(entity);
     }
 
     // @GetMapping("/vgetid/{id}")
