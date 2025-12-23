@@ -1,6 +1,6 @@
-package com.example.works.service;
+package com.example.demo.service;
 
-import com.example.works.entity.Person;
+import com.example.demo.entity.Person;
 import java.util.List;
 
 public interface PersonService {

@@ -1,8 +1,8 @@
-package com.example.works.service.impl;
+package com.example.demo.service.Impl;
 
-import com.example.works.entity.Person;
-import com.example.works.repository.PersonRepository;
-import com.example.works.service.PersonService;
+import com.example.demo.entity.Person;
+import com.example.demo.repository.PersonRepository;
+import com.example.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

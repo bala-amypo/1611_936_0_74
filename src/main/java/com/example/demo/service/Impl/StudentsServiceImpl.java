@@ -1,8 +1,8 @@
-package com.example.works.service.impl;
+package com.example.demo.service.Impl;
 
-import com.example.works.entity.Student;
-import com.example.works.repository.StudentsRepository;
-import com.example.works.service.StudentsService;
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentsRepository;
+import com.example.demo.service.StudentsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.example.works.service;
+package com.example.demo.service;
 
-import com.example.works.entity.Department;
+import com.example.demo.entity.Department;
 import java.util.List;
 
 public interface DepartmentService {

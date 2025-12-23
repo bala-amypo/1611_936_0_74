@@ -1,8 +1,8 @@
-package com.example.works.service;
+package com.example.demo.service;
 
 import java.util.List;
 
-import com.example.works.entity.Course;
+import com.example.demo.entity.Course;
 
 public interface CourseService {
 
