@@ -1,4 +1,4 @@
-package com.example.works.service.impl;
+package com.example..service.impl;
 
 import com.example.works.entity.Course;
 import com.example.works.repository.CourseRepository;
