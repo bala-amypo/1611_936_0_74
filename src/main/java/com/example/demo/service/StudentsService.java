@@ -3,7 +3,7 @@ package com.example.works.service;
 import com.example.works.entity.Student;
 import java.util.List;
 
-public interface StudentService {
+public interface StudentsService {
 
     Student addStudent(Student student);
 

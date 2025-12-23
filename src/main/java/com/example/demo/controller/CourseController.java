@@ -1,7 +1,7 @@
-package com.example.works.controller;
+package com.example.demo.controller;
 
-import com.example.works.entity.Course;
-import com.example.works.service.CourseService;
+import com.example.demo.entity.Course;
+import com.example.demo.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
